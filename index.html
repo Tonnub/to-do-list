@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black transition-all">
+    <div
+      class="h-[400px] w-[800px] rounded-xl bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 text-white font-bold flex flex-col items-center justify-center m-auto mb-7 mt-10"
+    >
+      <h2 class="text-xl mb-3 text-black" id="List">To-Do-List</h2>
+      <div class="justify-between flex justify-center items-center">
+        <button
+          onclick="Add()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transiton-all hover:scale-[1.2] active:scale-[0.8] mr-1 duration-500"
+          id="a"
+        >
+          Add
+        </button>
+        <button
+          onclick="RemoveB()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transition-all hover:scale-[1.2] active:scale-[0.8] ml-1 duration-500"
+          id="b"
+        >
+          Remove Newest
+        </button>
+        <button
+          onclick="RemoveT()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transition-all hover:scale-[1.2] active:scale-[0.8] ml-1 duration-500"
+          id="c"
+        >
+          Remove Oldest
+        </button>
+        <button
+          onclick="Sort()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transition-all hover:scale-[1.2] active:scale-[0.8] ml-1 duration-500"
+          id="d"
+        >
+          Sort
+        </button>
+        <button
+          onclick="ASort()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transition-all hover:scale-[1.2] active:scale-[0.8] ml-1 duration-500"
+          id="e"
+        >
+          Reverse Sort
+        </button>
+        <button
+          onclick="Reverse()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transition-all hover:scale-[1.2] active:scale-[0.8] ml-1 duration-500"
+          id="f"
+        >
+          Reverse
+        </button>
+        <button
+          onclick="FIL()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transition-all hover:scale-[1.2] active:scale-[0.8] ml-1 duration-500"
+          id="g"
+        >
+          Filter
+        </button>
+        <button
+          onclick="Return()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transition-all hover:scale-[1.2] active:scale-[0.8] ml-1 duration-500"
+          id="h"
+        >
+          Return
+        </button>
+        <button
+          onclick="RemoveD()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white mb-1 rounded-lg transition-all hover:scale-[1.2] active:scale-[0.8] ml-1 duration-500"
+          id="i"
+        >
+          Remove Specific
+        </button>
+      </div>
+      <div
+        class="h-[160px] w-[300px] flex justify-center items-center rounded-xl bg-gray-400 mt-10 flex-col"
+      >
+        <button
+          onclick="mode()"
+          class="text-lg h-[60px] w-[80px] bg-black text-white rounded-lg transiton-all hover:scale-[1.2] active:scale-[0.8] duration-500 mg-auto"
+          id="DLmode"
+        >
+          Dark Mode
+        </button>
+        <button
+          onclick="profile()"
+          class="text-xl h-[60px] w-[80px] bg-black text-blue-700 rounded-lg transiton-all hover:scale-[1.2] active:scale-[0.8] duration-500 mg-auto mt-2"
+          id="pro"
+        >
+          +
+        </button>
+        <button
+          onclick="pro()"
+          class="text-xl h-[60px] w-[80px] bg-black text-red-700 rounded-lg transiton-all hover:scale-[1.2] active:scale-[0.8] duration-500 mg-auto mt-2"
+          id="profile"
+        >
+          -
+        </button>
+      </div>
+    </div>
+
+    <div id="box" class=""></div>
+    <div id="blue" class="flex-wrap flex"></div>
+    <div id="red" class="flex-wrap flex"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
